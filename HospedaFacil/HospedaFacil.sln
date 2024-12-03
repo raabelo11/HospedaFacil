@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35521.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospedaFacil.Web.Api", "HospedaFacil.Web.Api.csproj", "{88F28A48-314D-477F-842C-648311989970}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0EBEEA25-8CB6-4CED-9D95-8032827E3008} = {0EBEEA25-8CB6-4CED-9D95-8032827E3008}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospedaFacil.Domain", "..\HospedaFacil.Domain\HospedaFacil.Domain.csproj", "{593BA467-7DF3-4238-9D57-7E7D58BE511A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospedaFacil.Insfraestructure", "..\HospedaFacil.Insfraestructure\HospedaFacil.Insfraestructure.csproj", "{E6DDB730-F249-40A1-BE98-14C439E5CAA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospedaFacil.Application", "..\HospedaFacil.Application\HospedaFacil.Application.csproj", "{0EBEEA25-8CB6-4CED-9D95-8032827E3008}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88F28A48-314D-477F-842C-648311989970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88F28A48-314D-477F-842C-648311989970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88F28A48-314D-477F-842C-648311989970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88F28A48-314D-477F-842C-648311989970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593BA467-7DF3-4238-9D57-7E7D58BE511A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593BA467-7DF3-4238-9D57-7E7D58BE511A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593BA467-7DF3-4238-9D57-7E7D58BE511A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593BA467-7DF3-4238-9D57-7E7D58BE511A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6DDB730-F249-40A1-BE98-14C439E5CAA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6DDB730-F249-40A1-BE98-14C439E5CAA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6DDB730-F249-40A1-BE98-14C439E5CAA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6DDB730-F249-40A1-BE98-14C439E5CAA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EBEEA25-8CB6-4CED-9D95-8032827E3008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EBEEA25-8CB6-4CED-9D95-8032827E3008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EBEEA25-8CB6-4CED-9D95-8032827E3008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EBEEA25-8CB6-4CED-9D95-8032827E3008}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
