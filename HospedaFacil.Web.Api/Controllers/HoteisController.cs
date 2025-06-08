@@ -1,12 +1,34 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using HospedaFacil.Domain.Models;
+using HospedaFacil.Insfraestructure.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace HospedaFacil.Controllers
 {
-    public class HoteisController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class HoteisController(IHospedaFacilWriteRepository writeRepository, IHospedaFacilReadRepository readRepository) : Controller
     {
-        public IActionResult Index()
+        private readonly IHospedaFacilWriteRepository _writeRepository = writeRepository;
+        private readonly IHospedaFacilReadRepository _readRepository = readRepository;
+
+        [HttpPost]
+        public async Task<ActionResult<GenericReturnValue>> AddHotel([FromBody] Hotel hotel)
         {
-            return View();
+            var resp = await _writeRepository.AddHotel(hotel);
+            var ret = new GenericReturnValue();
+            ret.data = resp;
+
+            return Ok(ret);
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<GenericReturnValue>> ListHotel()
+        {
+            var resp = await _readRepository.BuscarTodosAsync();
+            var ret = new GenericReturnValue();
+            ret.data = resp;
+
+            return Ok(ret);
         }
     }
 }

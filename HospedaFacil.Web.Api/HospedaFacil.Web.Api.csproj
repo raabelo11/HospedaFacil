@@ -11,6 +11,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.16" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
     <PackageReference Include="MongoDB.Driver" Version="3.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
@@ -19,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\HospedaFacil.Application\HospedaFacil.Application.csproj" />
     <ProjectReference Include="..\HospedaFacil.Domain\HospedaFacil.Domain.csproj" />
+    <ProjectReference Include="..\HospedaFacil.Insfraestructure\HospedaFacil.Insfraestructure.csproj" />
   </ItemGroup>
 
 </Project>

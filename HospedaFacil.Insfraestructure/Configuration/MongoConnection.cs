@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-public class Settings
+public class MongoConnection
 {
     public required string ConnectionString { get; set; }
     public required string Database { get; set; }
