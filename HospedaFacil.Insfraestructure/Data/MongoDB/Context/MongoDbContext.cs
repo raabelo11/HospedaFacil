@@ -1,4 +1,4 @@
-﻿using MongoDB.Driver;
+using MongoDB.Driver;
 
 namespace HospedaFacil.Insfraestructure.Data.MongoDB.Context
 {
@@ -6,7 +6,7 @@ namespace HospedaFacil.Insfraestructure.Data.MongoDB.Context
     {
         private readonly IMongoDatabase _database;
 
-        public MongoDbContext(MongoConnection settings)
+        public MongoDbContext(MongoConnection connection)
         {
             var client = new MongoClient(settings.ConnectionString);
             _database = client.GetDatabase(settings.Database);
