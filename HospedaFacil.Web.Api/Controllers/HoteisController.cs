@@ -24,7 +24,7 @@ namespace HospedaFacil.Controllers
         [HttpGet]
         public async Task<ActionResult<GenericReturnValue>> ListHotel()
         {
-            var resp = await _readRepository.BuscarTodosAsync();
+            var resp = await _readRepository.BuscarTodos();
             var ret = new GenericReturnValue();
             ret.data = resp;
 
