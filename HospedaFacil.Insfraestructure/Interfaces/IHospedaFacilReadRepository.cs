@@ -4,6 +4,6 @@ namespace HospedaFacil.Insfraestructure.Interfaces
 {
     public interface IHospedaFacilReadRepository
     {
-        Task<List<Hotel>> BuscarTodosAsync();
+        Task<List<Hotel>> BuscarTodos();
     }
 }

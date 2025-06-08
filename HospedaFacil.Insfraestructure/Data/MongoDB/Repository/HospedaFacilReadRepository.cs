@@ -1,23 +1,24 @@
 using MongoDB.Driver;
-using Microsoft.Extensions.Options;
 using HospedaFacil.Domain.Models;
+using HospedaFacil.Insfraestructure.Data.MongoDB.Context;
+using HospedaFacil.Insfraestructure.Interfaces;
 
 namespace HospedaFacil.Insfraestructure.Data.MongoDB.Repository
 {
-    public class HospedaFacilReadRepository
+    public class HospedaFacilReadRepository : IHospedaFacilReadRepository
     {
-        private readonly IMongoCollection<Hotel> _hoteisCollection;
+        private readonly MongoDbContext _context;
+        private readonly IMongoCollection<Hotel> _hotel;
 
-        public HospedaFacilReadRepository(IOptions<MongoConnection> connection)
+        public HospedaFacilReadRepository(MongoDbContext context)
         {
-            var client = new MongoClient(connection.Value.ConnectionString);
-            var database = client.GetDatabase(connection.Value.Database);
-            _hoteisCollection = database.GetCollection<Hotel>(connection.Value.HoteisCollectionName);
+            _context = context;
+            _hotel = _context.GetCollection<Hotel>("Hoteis");
         }
 
-        public async Task CriarHotelAsync(Hotel hotel)
+        public async Task<List<Hotel>> BuscarTodos()
         {
-            await _hoteisCollection.InsertOneAsync(hotel);
+            return await _hotel.Find(p => true).ToListAsync();
         }
     }
 }
