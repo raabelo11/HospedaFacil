@@ -14,6 +14,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospedaFacil.Insfraestructu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospedaFacil.Application", "..\HospedaFacil.Application\HospedaFacil.Application.csproj", "{0EBEEA25-8CB6-4CED-9D95-8032827E3008}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication.API", "..\Authentication.API\Authentication.API.csproj", "{B4B24A27-46D8-43E4-9BF6-174483E49E75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,8 +40,15 @@ Global
 		{0EBEEA25-8CB6-4CED-9D95-8032827E3008}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EBEEA25-8CB6-4CED-9D95-8032827E3008}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EBEEA25-8CB6-4CED-9D95-8032827E3008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4B24A27-46D8-43E4-9BF6-174483E49E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4B24A27-46D8-43E4-9BF6-174483E49E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4B24A27-46D8-43E4-9BF6-174483E49E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4B24A27-46D8-43E4-9BF6-174483E49E75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B4B24A27-46D8-43E4-9BF6-174483E49E75} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 EndGlobal
